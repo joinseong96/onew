@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/scroll.js"></script>
+    <title>ONEW</title>
+</head>
+  <body>
+      <div class="page_content">
+
+        <section class="main_banner">
+          <div class="onew_main_banner img_fit_cover"><img src="../images/img_onew_mainbanner.png" alt="main_banner_image"></div>
+          <div class="onew_main_banner_mb img_fit_cover"><img src="../images/img_onew_mainbanner.png" alt="main_banner_image"></div>
+          <a class="history_back_button" href="javascript:window.history.back();"><img src="../images/icon_arrow_back.svg" alt="history_back_button"></a>
+          <div class="main_banner_text">
+            <h2 class="typing_txt">
+              <p>ONEW 오뉴</p>
+              <p>5060들의 여가문화 놀이터</p>
+            </h2>
+            <div class="typing">
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="scroll_down_img" onclick="goToScroll('scroll_top')">
+            <div class="scroll_down_box">
+              <div class="scroll_down_circle"><img src="../images/img_circle_bottom.png" alt="scroll_down_circle"></div>
+              <div class="scroll_down_finger"><img src="../images/icon_bottom_finger.svg" alt="scroll_down_circle"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="onew_wrap_box">
+          <div class="onew_content_wrap">
+            <div class="onew_content_wrap_title">
+              오뉴
+            </div>
+            <div class="onew_content_list_box">
+              <div class="onew_content_list">
+                <div class="list_icon"><img src="../images/icon_client.svg" alt="client_icon"></div>
+                <span>CLIENT</span>
+                <span>로쉬코리아</span>
+              </div>
+              <div class="onew_content_list">
+                <div class="list_icon"><img src="../images/icon_work.svg" alt="work_icon"></div>
+                <span>WORK</span>
+                <span>React Native</span>
+              </div>
+              <div class="onew_content_list">
+                <div class="list_icon"><img src="../images/icon_device.svg" alt="device_icon"></div>
+                <span>DEVICE</span>
+                <span>(Android, IOS)</span>
+              </div>
+              <div class="onew_content_list">
+                <div class="list_icon"><img src="../images/icon_date.svg" alt="date_icon"></div>
+                <span>DATE</span>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="onew_mockup scroll_top">
+            <div class="mockup_background img_fit_cover">
+                <img src="../images/img_mockup_background.jpg" alt="background_mockup">
+            </div>
+
+            <div class="mockup_list mockup_content_left">
+              <div class="mockup_left_inner"><img src="../images/img_mockup_left.png" alt="mockup_img"></div>
+            </div>
+            <div class="mockup_list mockup_content_right">
+              <div class="mockup_right_inner"><img src="../images/img_mockup_right.png" alt="mockup_img"></div>
+            </div>
+            <div class="mockup_list mockup_content_bottom">
+              <div class="mockup_bottom_inner"><img src="../images/img_mockup_bottom.png" alt="mockup_img"></div>
+            </div>
+
+        </section>
+
+        <section id="curation" class="curation_wrap">
+            <div class="curation_title">
+              <div class="curation_title_logo img_fit_cover"><img src="../images/img_onew_logo.png" alt="logo"></div>
+              <p>오뉴(Onew)만의 취향 맞춤형 큐레이션 콘텐츠</p>
+            </div>
+
+            <div class="swiper onew_curation_slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner01.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner02.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner03.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner04.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner05.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner06.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner07.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner08.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner09.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner10.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner11.png" alt="curation_list_img"></div>
+                <div class="swiper-slide onew_curation_list img_fit_cover"><img src="../images/img_curation_banner12.png" alt="curation_list_img"></div>
+              </div>
+              <div class="swiper-scrollbar"><div class="progress"></div></div>
+            </div>
+            <div class="curation_bubble01">
+              <div class="bubble_inner img_fit_cover">
+                <img src="../images/img_bubble01.png" alt="bubble_img">
+              </div>
+            </div>
+            <div class="curation_bubble02">
+              <div class="bubble_inner img_fit_cover">
+                <img src="../images/img_bubble02.png" alt="bubble_img">
+              </div>
+            </div>
+            <div class="curation_bubble03">
+              <div class="bubble_inner img_fit_cover">
+                <img src="../images/img_bubble03.png" alt="bubble_img">
+              </div>
+            </div>
+            <div class="curation_bubble04">
+              <div class="bubble_inner img_fit_cover">
+                <img src="../images/img_bubble04.png" alt="bubble_img">
+              </div>
+            </div>
+        </section>
+
+        <section id="wheel_slide" class="wheel_slide">
+          <div class="swiper wheel_slide_wrap">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="wheel_slide_content preference">
+                  <div class="wheel_content_left">
+                    <div class="wheel_content_title">
+                      <p>PREFERENCE</p>
+                      <p>알고리즘 시스템을 구축하고<br>
+                        사용자가 앱에서 보고 오프라인에서 즐기는 취향 맞춤
+                        콘텐츠를 만날 수 있습니다!</p>
+                    </div>
+                    <div class="download_box">
+                      <span>App Store</span>
+                      <span>Google Play</span>
+                      <div class="download_circle img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                      <div class="speech_bubble_box">
+                          <p>ONEW<br>APP<br>DOWNLOAD SERVICE</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wheel_content_right">
+                    <div class="wheel_right_img">
+                      <img src="../images/img_preference.png" alt="preference_img">
+                      <img src="../images/img_preference_mb.png" alt="preference_imagge_mobile">
+                    </div>
+                  </div>
+                  <div class="preference_bell preference_icon_content">
+                    <div class="preference_icon"><img src="../images/icon_bell.svg" alt="bell_icon"></div>
+                  </div>
+                  <div class="preference_heart preference_icon_content">
+                    <div class="preference_icon"><img src="../images/icon_heart.svg" alt="heart_icon"></div>
+                  </div>
+                  <div class="download_circle_mb img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wheel_slide_content convenient">
+                  <div class="wheel_content_left">
+                    <div class="wheel_content_title">
+                      <p>CONVENIENT</p>
+                      <p>5060 맞춤 화면 제공으로 온라인이 익숙하지 않아도
+                        간편한 터치로 보다 편리하게 콘텐츠를 만나 볼 수 있습니다!</p>
+                    </div>
+                    <div class="download_box">
+                      <span>App Store</span>
+                      <span>Google Play</span>
+                      <div class="download_circle img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                      <div class="speech_bubble_box">
+                        <p>ONEW<br>APP<br>DOWNLOAD SERVICE</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wheel_content_right">
+                    <div class="wheel_right_img">
+                      <img src="../images/img_convenient.png" alt="convenient_img">
+                      <img src="../images/img_convenient_mb.png" alt="preference_imagge_mobile">
+                    </div>
+                  </div>
+                  <div class="download_circle_mb img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wheel_slide_content curation">
+                  <div class="wheel_content_left">
+                    <div class="wheel_content_title">
+                      <p>CURATION</p>
+                      <p>오뉴만의 맞춤형 큐레이션은 사용자가 관심사 설정으로
+                        나에게 필요한 정보와 프로그램, 제품 등을 간결하고 손쉽게
+                        제공 받을 수 있습니다!</p>
+                    </div>
+                    <div class="download_box">
+                      <span>App Store</span>
+                      <span>Google Play</span>
+                      <div class="download_circle img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                      <div class="speech_bubble_box">
+                        <p>ONEW<br>APP<br>DOWNLOAD SERVICE</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wheel_content_right">
+                    <div class="wheel_right_img">
+                      <img src="../images/img_curation.png" alt="curation_img">
+                      <img src="../images/img_curation_mb.png" alt="preference_imagge_mobile">
+                    </div>
+                  </div>
+                  <div class="download_circle_mb img_fit_cover"><img src="../images/img_download_circle.png" alt="download_circle_img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="download_box_mb">
+            <div class="download_title_mb">
+              <span>App Download</span>
+            </div>
+            <div class="download_box_list">
+              <span>App Store</span>
+              <span>Google Play</span>
+            </div>
+            <div class="speech_bubble_box">
+                <p>ONEW<br>APP<br>DOWNLOAD SERVICE</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="develop" class="develop_section">
+          <div class="life_style_wrap">
+            <div class="life_style_box">
+              <div class="life_style_circle life">
+                <div class="life_style_content">
+                  <div class="life_style_icon img_fit_cover"><img src="../images/icon_life.svg" alt="life_iocn"></div>
+                  <span>LIFE</span>
+                </div>
+              </div>
+              <div class="life_style_circle style">
+                <div class="life_style_content">
+                  <div class="life_style_icon img_fit_cover"><img src="../images/icon_style.svg" alt="style_iocn"></div>
+                  <span>STYLE</span>
+                </div>
+              </div>
+
+              <div class="add img_fit_cover"><img src="../images/img_plus.png" alt="plus_img"></div>
+
+              <div class="life_style_circle hobby">
+                <div class="life_style_content">
+                  <div class="life_style_icon img_fit_cover"><img src="../images/icon_hobby.svg" alt="hobby_iocn"></div>
+                  <span>HOBBY</span>
+                </div>
+              </div>
+            </div>
+            <div class="life_style_box_mb">
+              
+              <div class="life_style_circle hobby">
+                <div class="life_style_content">
+                  <div class="life_style_icon img_fit_cover"><img src="../images/icon_hobby.svg" alt="hobby_iocn"></div>
+                  <span>HOBBY</span>
+                </div>
+              </div>
+
+              <div class="add img_fit_cover"><img src="../images/img_plus.png" alt="plus_img"></div>
+
+              <div class="life_style_bottom">
+                <div class="life_style_circle life">
+                  <div class="life_style_content">
+                    <div class="life_style_icon img_fit_cover"><img src="../images/icon_life.svg" alt="life_iocn"></div>
+                    <span>LIFE</span>
+                  </div>
+                </div>
+                <div class="life_style_circle style">
+                  <div class="life_style_content">
+                    <div class="life_style_icon img_fit_cover"><img src="../images/icon_style.svg" alt="style_iocn"></div>
+                    <span>STYLE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="life_style_title">
+              <p>오뉴(ONEW)</p>
+              <p>사용자에게 라이프 스타일 맞춤형 큐레이션을 제공하기 위해<br>
+                알고리즘 시스템을 구축하였고, 콘텐츠를 쇼핑몰 형태로 관리 가능하도록
+                백 오피스 로직 구현</p>
+            </div>
+          </div>
+          <div class="develop_wrap">
+            <div class="develop_title">
+              DEVELOP
+            </div>
+            <div class="develop_box">
+              <div class="develop_list"><img src="../images/img_develop01.png" alt="develop_img"></div>
+              <div class="develop_list"><img src="../images/img_develop02.png" alt="develop_img"></div>
+              <div class="develop_list"><img src="../images/img_develop03.png" alt="develop_img"></div>
+              <div class="develop_list"><img src="../images/img_develop04.png" alt="develop_img"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="system_section">
+          <div class="system_title">
+            <h2>SYSTEM</h2>
+          </div>
+          <div class="system_top">
+            <div class="system_top_frame"></div>
+            <div class="system_top_content">
+              <div class="system_mockup_box">
+                <div class="system_mockup01">
+                  <img src="../images/img_system01.png" alt="system_img">
+                </div>
+                <div class="system_mockup02">
+                  <img src="../images/img_system02.png" alt="system_img">
+                </div>
+              </div>
+            </div>
+            <div class="system_top_title">
+              나만의 맞춤형 큐레이션
+            </div>
+          </div>
+          <div class="system_bottom">
+            <div class="system_bottom_frame"></div>
+            <div class="system_bottom_title">
+              간편한 결제 프로세스
+            </div>
+            <div class="system_bottom_content">
+              <div class="system_mockup_box">
+                <div class="system_mockup03">
+                  <img src="../images/img_system03.png" alt="system_img">
+                </div>
+                <div class="system_mockup04">
+                  <img src="../images/img_system04.png" alt="system_img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="flow_slide">
+          <div class="flow_wraper">
+            <div class="flow_slide_list"><img src="../images/img_slide01.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide02.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide03.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide04.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide05.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide06.png" alt="flow_slide_img"></div>
+            <div class="flow_slide_list"><img src="../images/img_slide07.png" alt="flow_slide_img"></div>
+          </div>
+        </section>
+
+        <section class="review_section">
+          <div class="review_wrap">
+            <div class="review_blue review_list">
+              <div class="review_blue_inner review_list_inner">
+                <div class="thumb_nail img_fit_cover"><img src="../images/img_thumbnail01.png" alt="thumb_nail_img"></div>
+                <div class="review_content">
+                  <p>자유로운 소셜활동</p>
+                  <p>자기가 하고 싶은 취미, 문화예술, 운동 등을 원하는 날에만
+                    참여하면서 자유롭게 소셜활동을 즐길 수 있으니 너무 즐겁게
+                    사용하고 있어요! 😆</p>
+                  <div class="review_fin">
+                    <div class="review_star img_fit_cover"><img src="../images/icon_star_list.svg" alt="star_img"></div>
+                    <span>agp*****</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review_yellow review_list">
+              <div class="review_yellow_inner review_list_inner">
+                <div class="thumb_nail img_fit_cover"><img src="../images/img_thumbnail02.png" alt="thumb_nail_img"></div>
+                <div class="review_content">
+                  <p>연령대에 맞춘 디자인</p>
+                  <p>부모님께 소개드린 어플인데 원하시는 취미 생활에<br>
+                    맞춰서 정보를 알맞게 제공받을 수 있어서 너무 좋아하세요!
+                    잘 사용하고 있습니다~</p>
+                  <div class="review_fin">
+                    <div class="review_star"><img src="../images/icon_star_list.svg" alt="star_img"></div>
+                    <span>wjs*****</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review_green review_list">
+              <div class="review_green_inner review_list_inner">
+                <div class="thumb_nail img_fit_cover"><img src="../images/img_thumbnail03.png" alt="thumb_nail_img"></div>
+                <div class="review_content">
+                  <p>취지가 매우 좋음</p>
+                  <p>취지가 매우 좋고 관리자와 소통이<br>
+                    원활하여 좋습니다.</p>
+                  <div class="review_fin">
+                    <div class="review_star img_fit_cover"><img src="../images/icon_star_list.svg" alt="star_img"></div>
+                    <span>dkd*****</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_fin_banner">
+            <div class="review_phone">
+              <img src="../images/img_review_phone.png" alt="review_phone_img">
+            </div>
+            <div class="review_fin_frame"></div>
+            <div class="review_heart review_fin_icon">
+              <div class="heart_color"><img src="../images/icon_heart_color.svg" alt="heart_icon"></div>
+            </div>
+            <div class="review_bell review_fin_icon">
+              <div class="bell_color"><img src="../images/icon_bell_color.svg" alt="bell_icon"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="onew_fin">
+          <div class="onew_fin_text">
+            <p>LIFPYS</p>
+            <p>www.lifpys.com</p>
+          </div>
+        </section>
+      </div>
+
+      <script>
+        
+      </script>
+  </body>
+</html>
