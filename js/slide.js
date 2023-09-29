@@ -20,44 +20,15 @@ $(function () {
         spaceBetween: 40,
       },
     },
-    pagination: {
+    scrollbar: {
       el: ".swiper-scrollbar",
       type: "custom",
       renderCustom: function (swiper, current, total) {
         var pct = (current / total) * 100 + "%";
-        $(".swiper-scrollbar .progress").width(pct);
+        $(".swiper-scrollbar").width(pct);
       },
     },
   });
-
-  // var swiper = new Swiper('.wheel_slide_wrap', {
-  //     speed: 600,
-  //     direction: 'vertical',
-  //     effect : 'fade',
-  //     mousewheel: true,
-  //     watchOverflow : true,
-  //     on: {
-  //         slideChange: function() {
-  //             $("body, html").animate({ scrollTop: $('#wheel_slide').offset().top}, 400);
-  //             setTimeout(function () {
-  //               swiper.params.touchReleaseOnEdges = false;
-  //               swiper.params.mousewheel.releaseOnEdges = false;
-  //             });
-  //         },
-  //         reachEnd: function() {
-  //             setTimeout(function () {
-  //                 swiper.params.touchReleaseOnEdges = true;
-  //                 swiper.params.mousewheel.releaseOnEdges = true;
-  //             }, 500);
-  //         },
-  //         reachBeginning: function() {
-  //             setTimeout(function () {
-  //                 swiper.params.touchReleaseOnEdges = true;
-  //                 swiper.params.mousewheel.releaseOnEdges = true;
-  //             }, 500);
-  //         }
-  //       },
-  // });
 
   window.onload = function () {
     var bannerLeft = 0;
