@@ -88,10 +88,8 @@
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right{display: none;}
 .swiper-scrollbar{width: 258px!important; height: 10px!important; left: 50%!important; transform: translateX(-50%); background: #f7f7f7;}
-/* .swiper-scrollbar .progress{ height: 100%; transition: all 0.3s ease; background: #DECFF5; border-radius: 50px; cursor: pointer} */
-.swiper-scrollbar-drag {
-  background: #DECFF5;
-}
+.swiper-scrollbar-drag{ height: 100%; transition: all 0.3s ease; background: #DECFF5; border-radius: 50px; cursor: pointer}
+
 .onew_curation_list{width: 358px; height: 438px;}
 .onew_curation_list.swiper-slide-active{width: 405px; height: 495px;}
 .onew_curation_list.swiper-slide-active img{opacity: 1;}

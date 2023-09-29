@@ -3,7 +3,7 @@ $(function () {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    loop: true,
+    loop: false,
     slidesPerView: "auto",
     spaceBetween: 5,
     coverflowEffect: {
@@ -22,11 +22,7 @@ $(function () {
     },
     scrollbar: {
       el: ".swiper-scrollbar",
-      type: "custom",
-      renderCustom: function (swiper, current, total) {
-        var pct = (current / total) * 100 + "%";
-        $(".swiper-scrollbar").width(pct);
-      },
+      hide: false,
     },
   });
 
